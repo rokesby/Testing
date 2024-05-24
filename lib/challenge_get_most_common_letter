@@ -1,0 +1,45 @@
+def get_most_common_letter(text):
+    # Empty counter
+    counter = {}
+
+    for char in text:
+        # For each character in the input string.
+
+        # Strip out the special characters
+        if char.isalpha():
+            counter[char] = counter.get(char, 0) + 1
+        # Populate the dictionary with only a key?
+        # Find the corresponding key in the dictionary, return 0 if it's not there. Add one to it to increment a counter for that specific character.
+
+        
+
+    # Understand the output of the loop which should be a list of unique characters and their frequency.
+    print ("Populated dictionary : ", counter)
+    print ("Counter items : ", counter.items())
+    
+    # The output looks good and includes special characters too 
+    # Populated dictionary :  {'t': 3, 'h': 3, 'e': 4, ' ': 8, 'r': 4, 'o': 7, 'f': 4, ',': 2, 'i': 2, 's': 1, 'n': 1, '!': 1}
+
+    # Now that the string has been traversed.
+    # Get the key, value pairs and sort them with a function that doesn't seem to make sense, take the first element of the sorted list and the first element of that??
+    
+    # Need to confirm that the sorting of the dictionary is correct.
+
+    # The items() function returns a list of tuples, take the first tuple, and then the first element of that, which should be the answer.
+    print("Sorted list : ", sorted(counter.items(), key=lambda item: item[1]))
+     
+    # This is in reverse order and includes special characters.
+    letter = sorted(counter.items(), key=lambda item: item[1], reverse=True)[0][0]
+
+    # Return the last remaining letter from the sort function.
+    return letter
+
+print(f"""
+Running:  get_most_common_letter("the roof, the roof, the roof is on fire!"))
+Expected: o
+Actual:   {get_most_common_letter("the roof, the roof, the roof is on fire!")}
+""")
+
+'''
+Comment only
+'''
