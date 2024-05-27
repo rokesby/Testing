@@ -1,5 +1,5 @@
 # File: tests/counter.py
-from lib.Counter import Counter
+from lib.counter import Counter
 
 def test_counter_initially_reports_zero():
     myCounter = Counter()

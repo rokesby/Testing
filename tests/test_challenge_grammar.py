@@ -1,6 +1,6 @@
-# File: tests/challenge_grammar.py
+# File: tests/test_challenge_grammar.py
 #from lib.challenge_grammar import GrammarStats
-from lib.challenge_grammar import *
+from lib.grammar import GrammarStats
 
 # Exceptions?
 

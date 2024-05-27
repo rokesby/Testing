@@ -14,9 +14,3 @@ class Present:
             raise Exception("No contents have been wrapped.")
         return self.contents
 
-
-'''
-Test creation of the class and check that no contents have been wrapped.
-Add contents and try to wrap again.
-Try to unwrap a present with no contents
-'''
